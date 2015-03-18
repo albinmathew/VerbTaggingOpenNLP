@@ -5,7 +5,7 @@ import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
 /**
- * Unit test for simple POS_verb.
+ * Unit test for simple POSVerb.
  */
 public class AppTest 
     extends TestCase

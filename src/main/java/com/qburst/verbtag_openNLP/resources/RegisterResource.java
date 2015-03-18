@@ -1,6 +1,6 @@
 package com.qburst.verbtag_openNLP.resources;
 
-import com.qburst.verbtag_openNLP.POS_verb;
+import com.qburst.verbtag_openNLP.POSVerb;
 import com.qburst.verbtag_openNLP.Result;
 import com.qburst.verbtag_openNLP.view.SearchView;
 
@@ -21,7 +21,7 @@ public class RegisterResource {
     public SearchView post(@FormParam("field") String searchtext)
             throws IOException {
 
-        Result result = POS_verb.POSTag(searchtext);
+        Result result = POSVerb.POSTag(searchtext);
         return new SearchView(result.getVlist(), result.getRlist());
     }
 }
